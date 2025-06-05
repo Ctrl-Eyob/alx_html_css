@@ -1,0 +1,39 @@
+/* Make the body a flex container in a column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Make main a flex container in a row layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Article takes 2/3 of the width, and is scrollable */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Aside takes 1/3 of the width, and is scrollable */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Basic styling for header and footer */
+header, footer {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
+  border: 1px solid #ddd;
+}
