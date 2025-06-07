@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background: url('images/Object.png') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: relative;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.learn {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+ }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.hero-nav span {
+  text-transform: uppercase;
+}
+
+.register-btn {
+  background: #c271ff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.learn {
+  background: #071629;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.learn h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.learn h2 span {
+  color: #c271ff;
+}
+
+.pros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pro {
+  max-width: 150px;
+}
+
+.pro img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.pro h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pro p {
+  font-size: 0.85rem;
+  color: #d3d3d3;
+  margin-top: 0.5rem;
+}
+
+.top-nav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  color: white;
+  font-weight: 700;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.top-nav li {
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 30px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: url('images/Object.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* Testimonial Section */
+.testimonial {
+  display: flex;
+  align-items: center;
+  background-color: #bd67e4;
+  color: white;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.testimonial-text p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-text h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-text em {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Tutorials Section */
+.tutorials {
+  background-color: #f9f9f9;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.tutorials h2 {
+  color: #000000; 
+}
+
+.highlight {
+  color: #bd67e4;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #bd67e4;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author {
+  color: #bd67e4;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.stars {
+  margin-top: 10px;
+  color: #bd67e4;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* correct  code */
+
+/* Free Membership Section */
+.membership {
+  background-color: #071629;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 80px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.membership .highlight {
+  color: #bd67e4;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  width: 200px;
+}
+
+.feature .icon {
+  font-size: 40px;
+  color: #bd67e4;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Button */
+.register-btn {
+  padding: 15px 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #bd67e4, #c870ef);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: 'source sans pro', cursive;
+  font-size: 14px;
+}
+
+
+/* FAQ Section */
+.faq {
+  background: #fff;
+  color: #071629;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.faq h2 {
+  font-size: 48px;
+  font-family: 'source sans pro', cursive;
+  margin-bottom: 50px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+
+.footer-social img {
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
