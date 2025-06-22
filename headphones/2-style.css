@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.results-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('images/headphones_hero_2.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.results-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.results-section p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.results-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  background-image: url('images/pentagone.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-content span {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .results-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

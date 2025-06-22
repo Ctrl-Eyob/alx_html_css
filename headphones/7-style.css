@@ -1,0 +1,114 @@
+.footer {
+  background-color: #0a1726;
+  color: #ccc;
+  padding: 20px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-left, .footer-right {
+    margin: 10px 0;
+  }
+
+  .footer-center {
+    order: 3;
+  }
+}
+/* === WHAT WE DO ANIMATIONS === */
+.what-we-do-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.what-we-do-item {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.what-we-do-item:hover {
+  transform: scale(1.1) rotate(-3deg);
+  opacity: 0.9;
+}
+
+/* Optional: pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.what-we-do-item.animate {
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+
+/* === OUR RESULTS ANIMATIONS === */
+.result-card {
+  background-image: url('pentagon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.result-card:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Optional: bounce-in when page loads */
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.result-card.animate {
+  animation: bounceIn 0.8s ease forwards;
+}
